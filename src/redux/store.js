@@ -1,5 +1,5 @@
 import { createStore, applyMiddleware } from 'redux'
-import { composeWithDevTools } from 'redux-devtools-extension/logOnlyInProduction'
+// import { composeWithDevTools } from 'redux-devtools-extension/logOnlyInProduction'
 import logger from 'redux-logger'
 import thunk from 'redux-thunk'
 
@@ -29,9 +29,13 @@ function loadFromLocalStorage() {
 }
 
 
+// const store = createStore(
+//   rootReducer, loadFromLocalStorage(),
+//   composeWithDevTools(applyMiddleware(logger, thunk))
+// )
+
 const store = createStore(
-  rootReducer, loadFromLocalStorage(),
-  composeWithDevTools(applyMiddleware(logger, thunk))
+  rootReducer, loadFromLocalStorage(), applyMiddleware(logger, thunk)
 )
 
 store.subscribe(() => saveToLocalStorage(store.getState()));

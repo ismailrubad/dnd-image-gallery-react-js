@@ -1,0 +1,1 @@
+export const FETCH_MEDIA_ITEMS = 'FETCH_MEDIA_ITEMS'

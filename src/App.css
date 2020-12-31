@@ -1,0 +1,125 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.container-fluid{
+  width: 100%;
+  padding-right: 45px;
+  padding-left: 45px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-md-4,.col-md-8{
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-md-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.col-md-8 {
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+.img_area img{
+  width: 100%;
+}
+
+.galleryCard{
+  position: relative;
+}
+
+.galleryCard .filter_area{
+  position: absolute;
+  display: block;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  font-size: 13px;
+  width: 100%;
+
+  left: -30px;
+  top: 50px;
+}
+
+.single_filter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3px;;
+}
+
+.single_filter input{
+  margin: 0;
+}
+
+.gallery_container{
+  background-color: #f4f8fb;
+  height: 100%;
+  padding: 50px;
+}
+
+.drop_txt{width: 100%; margin-top: 100px;}
+.filter_btn_area{
+  position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.filter_btn_area button{
+  background: #696e72;
+    color: #fff;
+    padding: 7px 6px;
+    outline: none;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
